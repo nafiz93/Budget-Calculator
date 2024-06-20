@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <div>
+            <h1>income</h1>
+            <input id="incomeInput" type="text">
+        </div>
+
+        <div>
+            <h1>expense</h1>
+            <input id="food" type="text">
+            <input id="rent" type="text">
+            <input id="clothes" type="text">
+        </div>
+
+        <div>
+            <button id="calcBtn">calculate</button>
+            <div id="totalExpenses">
+                <h1>total expenses</h1>
+            </div>
+
+            <div id="balance">
+                <h1>balance</h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <input id="savePercent" type="text">
+            <button id="saveBtn">save</button>
+        </div>
+
+        <div id="saveAmount">
+            <p class="errorNotifying" id="errorMassage">your expense is too much</p>
+            <h1>saving amount</h1>
+        </div>
+
+        <div id="remainingBalance">
+            <h1>remaining balance</h1>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
