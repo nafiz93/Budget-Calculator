@@ -31,6 +31,19 @@ function appending(getid, expOrBlnc) {
 //     parent.appendChild(newP);
 // };
 
+document.getElementById("calcBtn").addEventListener('click', function () {
+
+    let income = incomeExpense("incomeInput"); //we can't set this incomeExpense() function perameter outside of the click function as it would run automatically and would give us NAN value.
+    let foodCosting = incomeExpense("food");
+    let rentCosting = incomeExpense("rent");
+    let clothesCosting = incomeExpense("clothes");
+
+    let totalExpense = foodCosting + rentCosting + clothesCosting; //calculating total cost
+    let balanace = income - totalExpense;  //after expense remaining balance
+
+    appending("totalExpenses", totalExpense);
+    appending("balance", balanace);
+})
 
 
 
