@@ -45,6 +45,27 @@ document.getElementById("calcBtn").addEventListener('click', function () {
     appending("balance", balanace);
 })
 
+document.getElementById("saveBtn").addEventListener('click', function () {
+
+    let income = incomeExpense("incomeInput");
+    let foodCosting = incomeExpense("food");
+    let rentCosting = incomeExpense("rent");
+    let clothesCosting = incomeExpense("clothes");
+    let savePercent = incomeExpense("savePercent");
+
+    let totalExpense = foodCosting + rentCosting + clothesCosting; //calculating total cost
+    let balanace = income - totalExpense;  //after expense remaining balance
+    let savaingAmount = (income * savePercent) / 100;
+
+    if (savaingAmount > balanace) {
+        let errorMassage = document.getElementById("errorMassage");
+        errorMassage.style.display = "block";
+    }
+    else {
+        appending("saveAmount", savaingAmount);
+    }
+})
+
 
 
 
