@@ -11,43 +11,46 @@
 
 <body>
 
-    <section>
-        <div>
+    <section id="main">
+        <h1 style="color: #007FFF; margin-left: 450px;">Calulate Your Monthly Budget $</h1>
+        <div class="gap">
             <h1>income</h1>
             <input id="incomeInput" type="text">
         </div>
 
-        <div>
+        <div class="gap">
             <h1>expense</h1>
-            <input id="food" type="text">
-            <input id="rent" type="text">
-            <input id="clothes" type="text">
+            <div class="inputs">
+                <input class="input-gap" id="food" type="text" placeholder="Food Cost">
+                <input class="input-gap" id="rent" type="text" placeholder="Rental Cost">
+                <input class="input-gap" id="clothes" type="text" placeholder="Outfit Cost">
+            </div>
         </div>
 
-        <div>
+        <div class="gap">
             <button id="calcBtn">calculate</button>
             <div id="totalExpenses">
                 <h1>total expenses</h1>
             </div>
 
-            <div id="balance">
+            <div class="gap" id="balance">
                 <h1>balance</h1>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <input id="savePercent" type="text">
+    <section id="main2">
+        <div class="gap">
+            <input style="margin-top: 5px;" id="savePercent" type="text" placeholder="Amount You Want To Save">
             <button id="saveBtn">save</button>
         </div>
 
-        <div id="saveAmount">
+        <div class="gap" id="saveAmount">
             <p class="errorNotifying" id="errorMassage">your expense is too much</p>
-            <h1>saving amount</h1>
+            <h1 class="gap">saving amount</h1>
         </div>
 
-        <div id="remainingBalance">
+        <div class="gap" id="remainingBalance">
             <h1>remaining balance</h1>
         </div>
     </section>
